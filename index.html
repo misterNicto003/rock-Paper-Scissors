@@ -1,15 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
-</head>
-<body>
-    <h1>123</h1>
+  </head>
+  <body>
+    <div class="game">
+      <h1>Камень ножницы бумага</h1>
+
+      <div class="counter-block">
+        <div class="count count-user">0</div>
+        <span>:</span>
+        <div class="count count-comp">0</div>
+      </div>
+      <div class="figure-container">
+        <div class="user-field">
+          <button class="field rock" data-field="r">
+            <img class="rock" src="" alt="" />
+          </button>
+          <button class="field scissors" data-field="s"></button>
+          <button class="field paper" data-field="p"></button>
+        </div>
+        <div class="comp-field">
+          <button class="field rock" data-field="r"></button>
+          <button class="field scissors" data-field="s"></button>
+          <button class="field paper" data-field="p"></button>
+        </div>
+      </div>
+      <h3 class="result">Сделай свой выбор</h3>
+    </div>
+    <div class="buttons">
+      <button class="play">играть заново</button>
+    </div>
 
     <script src="./index.js"></script>
-    
-</body>
+  </body>
 </html>
